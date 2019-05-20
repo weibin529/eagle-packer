@@ -1,0 +1,75 @@
+{
+  "author": {
+    "name": "vbin"
+  },
+  "bin": {
+    "iwoppack": "src/index.js"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "eagle-rollup-plugin-vue": "^0.0.1",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.0.0",
+    "autoprefixer": "^9.5.1",
+    "chalk": "^2.4.2",
+    "clean-css": "^4.2.1",
+    "core-js": "^3.0.1",
+    "dayjs": "^1.8.14",
+    "fs-extra": "^8.0.1",
+    "lodash.isstring": "^4.0.1",
+    "postcss": "7.0.16",
+    "postcss-calc": "^7.0.1",
+    "postcss-clean": "^1.1.0",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-each": "^0.10.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-mix-color": "^0.1.6",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-selector-not": "^4.0.0",
+    "postcss-simple-vars": "^5.0.2",
+    "postcss-unprefix": "^2.1.4",
+    "rollup": "^1.12.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "10.0.0",
+    "rollup-plugin-gen-html": "^0.2.5",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-re": "^1.0.7",
+    "rollup-plugin-string": "^3.0.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "yargs": "^13.2.4"
+  },
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "engines": {
+    "node": ">8.9.0"
+  },
+  "files": [
+    "src"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "eagle-packer",
+  "peerDependencies": {
+    "vue": "^2.6.0",
+    "vue-template-compiler": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:weibin529/eagle-packer.git"
+  },
+  "scripts": {
+    "test": "node src/index.js --c=test/iwop-pack.config.js --w --env=development"
+  },
+  "version": "0.0.1"
+}
