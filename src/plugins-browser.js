@@ -1,4 +1,4 @@
-const vue = require('@mctech/rollup-plugin-vue')
+const vue = require('eagle-rollup-plugin-vue')
 const json = require('rollup-plugin-json')
 const resolve = require('rollup-plugin-node-resolve')
 const commonjs = require('rollup-plugin-commonjs')
