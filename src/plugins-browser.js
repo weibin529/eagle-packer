@@ -79,7 +79,12 @@ module.exports = (entryOptions, options) => {
       replaces: {
         'process.env.VERSION': JSON.stringify(process.env.VERSION || 'snapshot'),
         'process.env.NODE_ENV': JSON.stringify(env)
-      }
+      },
+      patterns: [{
+        transform (code, id) {
+          return code.replace(/\bconst\b/g,'var')  //将const 全词替换为var，解决浏览不能识别const的问题
+        }
+      }]
     }),
     babel(Object.assign({
       exclude: [/\/core-js\//],
